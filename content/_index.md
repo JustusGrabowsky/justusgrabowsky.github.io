@@ -30,10 +30,7 @@ sections:
       button:
         text: Download CV
         url: /cv.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
+      headings:{}
     design:
       css_class: hbx-bg-gradient
       avatar:
