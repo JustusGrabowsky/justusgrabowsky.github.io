@@ -50,16 +50,16 @@ sections:
       columns: 2
 
   # Publications (citation list)
-  - block: collection
-    id: publications
-    content:
-      title: Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-    design:
-      view: citation
+#  - block: collection
+#    id: publications
+#    content:
+#      title: Publications
+#      text: ''
+#      filters:
+#        folders:
+#          - publications
+#    design:
+#      view: citation
 
   # Contact section
   - block: markdown
