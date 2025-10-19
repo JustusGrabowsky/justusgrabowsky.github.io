@@ -1,13 +1,13 @@
 ---
 # Display name
-title: Alex Johnson
+title: Justus Grabowsky
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
+first_name: Justus
+last_name: Grabowsky
 
 # Pronouns (optional)
 pronouns: he/him
@@ -23,38 +23,31 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: PhD Student, Institute of Neuroinformatics, ETH Zürich
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: Neural Dynamics Lab
+    url: https://ndlab.ch
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'mailto:jgrabowsky@ethz.ch'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
   - icon: brands/github
-    url: https://github.com/alexjohnsonai
+    url: https://github.com/JustusGrabowsky
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: www.linkedin.com/in/justus-lorenz-grabowsky-013a66242
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Neural Dynamics
+  - Neuroscience of Speech
+  - AI for Science
 
 education:
-  - area: PhD Computer Science (AI Focus)
+  - area: PhD 
     institution: Stanford University
     date_start: 2015-09-01
     date_end: 2019-06-30
