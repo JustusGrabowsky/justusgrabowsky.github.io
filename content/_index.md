@@ -7,7 +7,6 @@ design:
   spacing: '6rem'
 
 sections:
-  # Profile / About card
   - block: resume-biography-3
     content:
       username: admin
@@ -37,7 +36,6 @@ sections:
         size: medium
         shape: circle
 
-  # Research (projects) grid
   - block: collection
     content:
       title: Research
@@ -45,23 +43,17 @@ sections:
       filters:
         folders:
           - projects
+        featured_only: false
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+      sort_by: date
+      order: desc
+      count: 24
     design:
       view: article-grid
       columns: 2
 
-  # Publications (citation list)
-#  - block: collection
-#    id: publications
-#    content:
-#      title: Publications
-#      text: ''
-#      filters:
-#        folders:
-#          - publications
-#    design:
-#      view: citation
-
-  # Contact section
   - block: markdown
     content:
       title: Contact
