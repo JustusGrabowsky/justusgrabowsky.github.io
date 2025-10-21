@@ -33,7 +33,7 @@ header:
     block: 'navbar'
     fixed_to_top: true
     show_search: false
-    backgroud: transparent
+    background: transparent
     show_theme_chooser: true
     logo:
       text: 'Justus Lorenz Grabowsky'
