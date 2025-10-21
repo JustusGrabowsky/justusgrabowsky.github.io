@@ -32,6 +32,7 @@ header:
     enable: true
     block: 'navbar'
     fixed_to_top: true
+    align: left
     show_search: false
     background: transparent
     show_theme_chooser: true
