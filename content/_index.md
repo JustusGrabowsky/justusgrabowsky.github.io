@@ -25,7 +25,7 @@ sections:
           Bachelor’s project: *Ultra-Strong Light-Matter Coupling in THz LC Resonators*  
           Supervisor: Prof. Carlo Sirtori (ENS Paris)
 
-        **Interests:** neural dynamics, neuroscience, AI for science
+        **Interests:** Neural Dynamics, Neuroscience, AI for Science
       button:
         text: Download CV
         url: /cv.pdf
@@ -54,12 +54,4 @@ sections:
       view: article-grid
       columns: 2
 
-  - block: markdown
-    content:
-      title: Contact
-      subtitle: ''
-      text: |-
-        You can reach me by email: <a href="mailto:jgrabowsky@ethz.ch">jgrabowsky@ethz.ch</a>
-    design:
-      columns: '1'
 ---

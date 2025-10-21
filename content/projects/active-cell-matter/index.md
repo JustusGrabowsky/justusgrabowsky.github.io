@@ -1,15 +1,13 @@
 ---
 title: "Active Cell Matter – Collective Behavior in Biological Systems"
-summary: "Computational modeling of collective motion in active cellular systems using coarse-grained particle dynamics at ENS Paris."
-# Make sure the date is not in the future
-date: 2022-03-01
+summary: "Computational modeling of collective motion in active cellular systems at ENS Paris; coarse-grained particle dynamics and links to continuum active-matter descriptions."
+date: 2022-03-01       # not in the future
 lastmod: 2022-03-01
-type: project
 draft: false
+type: project          # ensure Wowchemy treats this as a project
+page_type: project     # belt-and-suspenders
 tags: [biophysics, active-matter]
 authors: ["Justus Grabowsky"]
-# Optional: order among cards (lower = earlier)
 weight: 30
 ---
-At **École Normale Supérieure (ENS Paris)** I collaborated on a study of active cellular matter, modeling self-propelled agents interacting via short-range forces.  
-The work aimed to connect emergent flocking dynamics with continuum descriptions of active media.
+At **École Normale Supérieure (ENS Paris)** I collaborated on a study of active cellular matter, modeling self-propelled agents with short-range interactions and analyzing emergent flocking and pattern formation.
