@@ -35,8 +35,7 @@ header:
     show_search: false
     background: transparent
     show_theme_chooser: true
-    logo:
-      text: 'Justus Lorenz Grabowsky'
+    logo: null
 
 # Site footer
 #footer:
