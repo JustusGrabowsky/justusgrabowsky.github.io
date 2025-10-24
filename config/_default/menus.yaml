@@ -13,7 +13,7 @@ main:
     weight: 2
 
   - name: CV
-    url: /cv.pdf
+    url: /cv/
     weight: 3
 
   - name: Contact
