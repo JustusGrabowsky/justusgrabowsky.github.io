@@ -1,19 +1,10 @@
 ---
-title: "Master’s Thesis – GW-BSE Study of the Band Structure and Optical Spectrum of Layered CrSBr"
-summary: "Many-body perturbation theory calculations of quasiparticle and excitonic properties of the 2D magnetic semiconductor CrSBr using BerkeleyGW and Quantum ESPRESSO."
-date: 2025-05-01
-tags: [materials, GW, BSE, DFT]
-links:
-  - icon: github
-    icon_pack: fab
-    name: Code
-    url: ""
-  - icon: file
-    icon_pack: fas
-    name: Thesis PDF
-    url: ""
+title: "GW-BSE Study of Chromium Sulfur Bromide"
+summary: "First-principles many-body perturbation theory study of electronic, optical, and excitonic properties in the layered magnetic semiconductor CrSBr using GW-BSE methods."
+date: 2024-10-01
+tags: [many-body-theory, 2d-materials, ab-initio-methods, past]
 authors: ["Justus Grabowsky"]
 ---
-At Yale University, I carried out my Master’s thesis under the supervision of **Diana Qiu** (Yale) and **Juan Carrasquilla** (ETH Zürich).  
-The project focused on computing quasiparticle energies and excitonic spectra of the layered magnetic semiconductor CrSBr.  
-I implemented a full GW–BSE workflow combining Quantum ESPRESSO with BerkeleyGW, analyzed frequency-dependent dielectric functions, and studied spin-dependent optical transitions.
+For my Master's thesis, I spent eight months as a visiting researcher at **Yale University**, working with Diana Qiu on the electronic and optical properties of chromium sulfur bromide (CrSBr). CrSBr is a layered magnetic semiconductor with promising applications in spintronics and optoelectronics.
+
+CrSBr exhibits remarkable properties: it's a quasi-1D semiconductor with highly anisotropic electronic structure, stable antiferromagnetic ordering down to the monolayer limit, and strong excitonic effects. Using first-principles calculations, we investigated how thickness and magnetic configuration affect its properties across monolayer, bilayer, and trilayer systems. We computed electronic band structures using density functional theory with Hubbard corrections (DFT+U) and many-body perturbation theory within the GW approximation. To capture excitonic effects and optical spectra, we solved the Bethe-Salpeter equation. All calculations were performed using Quantum ESPRESSO and BerkeleyGW, including spin-orbit coupling and noncollinear magnetism. Our results reproduce the characteristic features of CrSBr: direct band gaps at the Γ point, strong in-plane anisotropy with quasi-1D electronic structure, and highly polarized optical absorption along the crystallographic b-axis. We found that excitons in CrSBr have large binding energies (hundreds of meV) and cigar-shaped wavefunctions extending primarily along the b-direction. Notably, in bilayer systems, magnetic ordering controls exciton localization—ferromagnetic alignment allows excitons to delocalize across layers, while antiferromagnetic coupling confines them to single layers. The work extended previous computational studies by providing systematic GW-BSE results for trilayer CrSBr, bridging the gap between few-layer and bulk systems. This established a foundation for understanding how magnetic order couples to excitonic properties in van der Waals magnets.

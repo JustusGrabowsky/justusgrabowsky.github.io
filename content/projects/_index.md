@@ -1,6 +1,5 @@
 ---
 title: 'Projects'
-date: 2024-05-19
 type: landing
 
 design:
@@ -11,11 +10,32 @@ design:
 sections:
   - block: collection
     content:
-      title: Projects
-      text: Projects that I have worked on over the years.
+      title: Current
+      text: My ongoing research projects.
+      count: 0
       filters:
         folders:
           - projects
+        tags:
+          - current
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 3
+      show_date: false
+      show_read_time: false
+      show_read_more: false
+
+  - block: collection
+    content:
+      title: Past
+      text: Previous projects and explorations.
+      count: 0
+      filters:
+        folders:
+          - projects
+        tags:
+          - past
     design:
       view: article-grid
       fill_image: false

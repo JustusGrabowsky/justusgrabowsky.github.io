@@ -1,9 +1,8 @@
 ---
 title: "Machine-Learned Interatomic Potential for BaTiO₃"
-summary: "Development of a neural-network interatomic potential for BaTiO₃ trained on DFT data and implemented with DeePMD-kit."
-date: 2023-12-01
-tags: [machine-learning, materials, DFT]
+summary: "Development and training of neural network interatomic potentials for barium titanate using density functional theory data, DeePMD-kit, and active learning to enable efficient molecular dynamics simulations."
+date: 2024-03-15
+tags: [machine-learning, computational-materials-science, density-functional-theory, past]
 authors: ["Justus Grabowsky"]
 ---
-Supervised by **Nicola Spaldin** and **Mathieu Luisier** at ETH Zürich, I generated a DFT dataset and trained a neural-network interatomic potential for BaTiO₃ using DeePMD-kit.  
-The model reproduces bulk energies and captures structural distortions relevant to ferroelectric transitions, serving as a foundation for active-learning extensions.
+As part of a semester project at the Integrated Systems Laboratory at ETH Zürich, supervised by Mathieu Luisier, we developed machine-learned interatomic potentials (MLIPs) for barium titanate (BaTiO₃). The project addressed the computational cost of ab-initio molecular dynamics by training neural network models to learn the potential energy surface from DFT calculations. We generated a dataset of BaTiO₃ configurations using Quantum ESPRESSO with PBEsol functionals, computing energies, forces, and virial stress for 160-atom supercells. Using the DeePMD-kit framework, we trained models with varying neural network architectures and implemented an active learning routine to iteratively refine the dataset through molecular dynamics simulations and targeted DFT calculations. In the second part, we trained models on a larger publicly available dataset from Materials Cloud containing thousands of configurations. We compared architectures of increasing complexity and demonstrated that more sophisticated models better captured energy landscapes and outlier configurations. Cross-validation experiments showed that models trained on 40-atom systems could generalize to 320-atom configurations, highlighting transferability across system sizes.
