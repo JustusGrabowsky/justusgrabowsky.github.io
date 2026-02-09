@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Justus Lorenz Grabowsky</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #f5f5f5;
+      color: #333;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      width: 200px;
+      background-color: #e8e8e8;
+      border-right: 2px solid #333;
+      padding: 20px;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .sidebar h1 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #333;
+    }
+
+    .sidebar nav ul {
+      list-style: none;
+    }
+
+    .sidebar nav ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar nav a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      padding: 8px;
+      border: 1px solid transparent;
+      transition: all 0.1s;
+    }
+
+    .sidebar nav a:hover {
+      background-color: #d0d0d0;
+      border: 1px solid #333;
+    }
+
+    .sidebar nav a.active {
+      background-color: #fff;
+      border: 1px solid #333;
+      font-weight: bold;
+    }
+
+    /* Main Content Area */
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .header {
+      background-color: #fff;
+      border-bottom: 2px solid #333;
+      padding: 20px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .content-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 30px;
+      background-color: #fff;
+    }
+
+    .content-area h1 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #333;
+    }
+
+    .content-area h2 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      padding-top: 10px;
+    }
+
+    .content-area h3 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .content-area p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .content-area ul, .content-area ol {
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
+
+    .content-area li {
+      margin-bottom: 8px;
+    }
+
+    .content-area a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+
+    .content-area a:visited {
+      color: #663399;
+    }
+
+    .content-area a:hover {
+      background-color: #ffff99;
+    }
+
+    /* Box elements for visual hierarchy */
+    .box {
+      border: 2px solid #333;
+      padding: 15px;
+      margin: 20px 0;
+      background-color: #fafafa;
+    }
+
+    .box h3 {
+      margin-top: 0;
+      border-bottom: 1px solid #999;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+    }
+
+    .box a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #333;
+        height: auto;
+      }
+
+      .sidebar h1 {
+        margin-bottom: 15px;
+      }
+
+      .sidebar nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .sidebar nav ul li {
+        margin-bottom: 0;
+      }
+
+      .main-content {
+        min-height: calc(100vh - 150px);
+      }
+
+      .content-area {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <h1>J. Grabowsky</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <h1>About</h1>
+      </div>
+      <div class="content-area">
+        <h1>About Me</h1>
+        <p>
+          I am a PhD student at the Institute of Neuroinformatics at ETH Zürich & UZH working on the neural dynamics of speech under the supervision of Timothée Proix. My research focuses on investigating how speech features are represented and combined in the brain to form a unified meaning.
+        </p>
+
+        <h2>Background</h2>
+        <p>
+          I received my Bachelor's degree in Physics from ETH Zürich in 2023, with a focus on experimental physics and nanofabrication. During my Bachelor's, I worked on ultra-strong light-matter coupling in terahertz metamaterial resonators at École Normale Supérieure in Paris.
+        </p>
+        
+        <p>
+          I completed my Master's degree in Physics at ETH Zürich in 2025, with thesis work on many-body perturbation theory. As a visiting researcher at Yale University (Oct 2024 – May 2025), I studied the electronic and optical properties of two-dimensional magnetic semiconductors using first-principles methods.
+        </p>
+
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Neural Dynamics</li>
+          <li>Neuroscience</li>
+          <li>AI for Science</li>
+          <li>Computational Methods</li>
+          <li>Two-Dimensional Materials</li>
+        </ul>
+        
+        <h2>Contact</h2>
+        <p>
+          Email: <a href=\"mailto:jgrabowsky@ethz.ch\">jgrabowsky@ethz.ch</a><br>
+          GitHub: <a href="https://github.com/JustusGrabowsky" target="_blank">JustusGrabowsky</a><br>
+          LinkedIn: <a href="https://www.linkedin.com/in/justus-lorenz-grabowsky-013a66242" target="_blank">Justus Lorenz Grabowsky</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

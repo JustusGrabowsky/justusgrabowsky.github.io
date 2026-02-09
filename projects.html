@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Justus Lorenz Grabowsky</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #f5f5f5;
+      color: #333;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      width: 200px;
+      background-color: #e8e8e8;
+      border-right: 2px solid #333;
+      padding: 20px;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .sidebar h1 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #333;
+    }
+
+    .sidebar nav ul {
+      list-style: none;
+    }
+
+    .sidebar nav ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar nav a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      padding: 8px;
+      border: 1px solid transparent;
+      transition: all 0.1s;
+    }
+
+    .sidebar nav a:hover {
+      background-color: #d0d0d0;
+      border: 1px solid #333;
+    }
+
+    .sidebar nav a.active {
+      background-color: #fff;
+      border: 1px solid #333;
+      font-weight: bold;
+    }
+
+    /* Main Content Area */
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .header {
+      background-color: #fff;
+      border-bottom: 2px solid #333;
+      padding: 20px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .content-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 30px;
+      background-color: #fff;
+    }
+
+    .content-area h1 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #333;
+    }
+
+    .content-area h2 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      padding-top: 10px;
+    }
+
+    .content-area h3 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .content-area p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .content-area ul, .content-area ol {
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
+
+    .content-area li {
+      margin-bottom: 8px;
+    }
+
+    .content-area a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+
+    .content-area a:visited {
+      color: #663399;
+    }
+
+    .content-area a:hover {
+      background-color: #ffff99;
+    }
+
+    /* Box elements for visual hierarchy */
+    .box {
+      border: 2px solid #333;
+      padding: 15px;
+      margin: 20px 0;
+      background-color: #fafafa;
+    }
+
+    .box h3 {
+      margin-top: 0;
+      border-bottom: 1px solid #999;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+    }
+
+    .box a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #333;
+        height: auto;
+      }
+
+      .sidebar h1 {
+        margin-bottom: 15px;
+      }
+
+      .sidebar nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .sidebar nav ul li {
+        margin-bottom: 0;
+      }
+
+      .main-content {
+        min-height: calc(100vh - 150px);
+      }
+
+      .content-area {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <h1>J. Grabowsky</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <h1>Projects</h1>
+      </div>
+      <div class="content-area">
+        <h1>My Projects</h1>
+        <p>
+          Here are some of the research projects I've worked on, ranging from experimental biophysics to computational materials science and ultrafast spectroscopy.
+        </p>
+
+        <h2>Current Research</h2>
+        <p>Neural Dynamics of Speech – PhD research at ETH Zürich & UZH</p>
+
+        <h2>Past Projects</h2>
+
+        <div class="box">
+          <h3>GW-BSE Study of Chromium Sulfur Bromide</h3>
+          <p>
+            <strong>Master's Thesis, Yale University (Oct 2024 – May 2025)</strong><br>
+            First-principles many-body perturbation theory study of electronic, optical, and excitonic properties in the layered magnetic semiconductor CrSBr using GW-BSE methods.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Machine-Learned Interatomic Potentials for BaTiO₃</h3>
+          <p>
+            <strong>Semester Project, ETH Zürich (2024)</strong><br>
+            Developed machine-learned interatomic potentials (MLIPs) for barium titanate to reduce computational cost of ab-initio molecular dynamics. Used DeePMD-kit framework with active learning to iteratively refine datasets and demonstrated model transferability across system sizes.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Angle-Resolved Photoemission Spectroscopy & Ultrafast Spectroscopy</h3>
+          <p>
+            <strong>Research Internship, OIST (Jul 2023 – Sep 2023)</strong><br>
+            Performed ARPES measurements on 2D materials to map electronic band structure and explore momentum-space exciton dynamics. Designed and built a fourth-harmonic generation (FHG) setup for deep-UV pump-probe experiments, optimizing nonlinear frequency conversion in BBO crystals.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>THz LC-Resonators for Ultra-Strong Light-Matter Coupling</h3>
+          <p>
+            <strong>Bachelor's Project, ENS Paris (Sep 2022 – Feb 2023)</strong><br>
+            Fabrication and characterization of terahertz metamaterial LC-resonators for ultra-strong light-matter coupling. Work included multiphysics simulations, cleanroom nanofabrication (electron-beam lithography, PVD, Si₃N₄ insulation), and terahertz time-domain spectroscopy. Achieved ~60% absorption at resonant frequency.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>In Vitro Studies of Actin-Based Motility</h3>
+          <p>
+            <strong>Research Internship, ENS Paris (Sep 2022 – Feb 2023)</strong><br>
+            Experimental and theoretical investigation of actin-based motility using VCA-coated polystyrene beads. Performed microscopy observations, particle tracking, and stochastic analysis of bead trajectories. Found that larger beads exhibited higher velocities, attributed to spatial confinement effects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

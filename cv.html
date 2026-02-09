@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | Justus Lorenz Grabowsky</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #f5f5f5;
+      color: #333;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      width: 200px;
+      background-color: #e8e8e8;
+      border-right: 2px solid #333;
+      padding: 20px;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .sidebar h1 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #333;
+    }
+
+    .sidebar nav ul {
+      list-style: none;
+    }
+
+    .sidebar nav ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar nav a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      padding: 8px;
+      border: 1px solid transparent;
+      transition: all 0.1s;
+    }
+
+    .sidebar nav a:hover {
+      background-color: #d0d0d0;
+      border: 1px solid #333;
+    }
+
+    .sidebar nav a.active {
+      background-color: #fff;
+      border: 1px solid #333;
+      font-weight: bold;
+    }
+
+    /* Main Content Area */
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .header {
+      background-color: #fff;
+      border-bottom: 2px solid #333;
+      padding: 20px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .content-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 30px;
+      background-color: #fff;
+    }
+
+    .content-area h1 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #333;
+    }
+
+    .content-area h2 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      padding-top: 10px;
+    }
+
+    .content-area h3 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .content-area p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .content-area ul, .content-area ol {
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
+
+    .content-area li {
+      margin-bottom: 8px;
+    }
+
+    .content-area a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+
+    .content-area a:visited {
+      color: #663399;
+    }
+
+    .content-area a:hover {
+      background-color: #ffff99;
+    }
+
+    /* Box elements for visual hierarchy */
+    .box {
+      border: 2px solid #333;
+      padding: 15px;
+      margin: 20px 0;
+      background-color: #fafafa;
+    }
+
+    .box h3 {
+      margin-top: 0;
+      border-bottom: 1px solid #999;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+    }
+
+    .box a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #333;
+        height: auto;
+      }
+
+      .sidebar h1 {
+        margin-bottom: 15px;
+      }
+
+      .sidebar nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .sidebar nav ul li {
+        margin-bottom: 0;
+      }
+
+      .main-content {
+        min-height: calc(100vh - 150px);
+      }
+
+      .content-area {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <h1>J. Grabowsky</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="cv.html" class="active">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <h1>Curriculum Vitae</h1>
+      </div>
+      <div class="content-area">
+        <h1>Curriculum Vitae</h1>
+        
+        <h2>Education</h2>
+        
+        <div class=\"box\">
+          <h3>PhD in Computational Neuroscience</h3>
+          <p>Institute of Neuroinformatics, ETH Zürich & UZH, Switzerland · 2025 – present</p>
+        </div>
+
+        <div class=\"box\">
+          <h3>MSc in Physics</h3>
+          <p>ETH Zürich, Switzerland · 2023 – 2025<br>
+          Thesis: GW-BSE Study of the Band Structure and Optical Spectrum of Layered CrSBr<br>
+          Supervisors: Prof. Diana Qiu (Yale) & Prof. Juan Carrasquilla (ETH Zürich)</p>
+        </div>
+
+        <div class=\"box\">
+          <h3>Exchange Student</h3>
+          <p>École Normale Supérieure (ENS Paris), France · Sep 2022 – Jun 2023</p>
+        </div>
+
+        <div class=\"box\">
+          <h3>BSc in Physics</h3>
+          <p>ETH Zürich, Switzerland · 2020 – 2023<br>
+          Bachelor's project: Ultra-Strong Light-Matter Coupling in THz LC Resonators<br>
+          Supervisor: Prof. Carlo Sirtori (ENS Paris)</p>
+        </div>
+
+        <h2>Research Experience</h2>
+        
+        <div class=\"box\">
+          <h3>Visiting Assistant in Research</h3>
+          <p>
+            Yale University, New Haven, USA · Oct 2024 – May 2025<br>
+            GW-BSE Study of Electronic and Optical Properties of Layered CrSBr<br>
+            Supervisor: Prof. Diana Qiu
+          </p>
+        </div>
+
+        <div class=\"box\">
+          <h3>Research Intern</h3>
+          <p>
+            Okinawa Institute of Science and Technology (OIST), Japan · Jul 2023 – Sep 2023<br>
+            Femtosecond Spectroscopy Unit<br>
+            Studied excited-state dynamics in 2D semiconductors using time-resolved ARPES and built fourth-harmonic generation setup
+          </p>
+        </div>
+
+        <div class=\"box\">
+          <h3>Research Intern</h3>
+          <p>
+            École Normale Supérieure (ENS Paris), France · Sep 2022 – Feb 2023<br>
+            Studied actin-based motility and ultra-strong light-matter coupling in terahertz resonators
+          </p>
+        </div>
+
+        <h2>Teaching</h2>
+        
+        <div class=\"box\">
+          <h3>Teaching Assistant</h3>
+          <p>
+            ETH Zürich · Feb 2022 – Jun 2022<br>
+            Taught weekly exercise classes for Physics I lecture (Prof. Andreas Vaterlaus)
+          </p>
+        </div>
+
+        <h2>Skills & Expertise</h2>
+        <ul>
+          <li><strong>Computational Methods:</strong> DFT, GW-BSE, Molecular Dynamics, Machine Learning (MLIPs)</li>
+          <li><strong>Experimental Techniques:</strong> ARPES, Ultrafast Spectroscopy, Terahertz Spectroscopy, Microscopy, Particle Tracking</li>
+          <li><strong>Nanofabrication:</strong> Electron-beam Lithography, Physical Vapor Deposition, Cleanroom Processing</li>
+          <li><strong>Programming:</strong> Python, MATLAB, Bash, Quantum ESPRESSO, DeePMD-kit</li>
+          <li><strong>Data Analysis:</strong> Statistical Analysis, Scientific Computing, Data Visualization</li>
+        </ul>
+
+        <h2>Honors & Awards</h2>
+        <ul>
+          <li>German Academic Scholarship Foundation (Studienstiftung des deutschen Volkes) · 2021 – 2025<br>
+            Awarded to less than 0.5% of German students</li>
+          <li>SEMP Scholarship · 2022 – 2023</li>
+          <li>Award of the German Physical Society · 2019</li>
+        </ul>
+
+        <h2>Languages</h2>
+        <ul>
+          <li>German (Native)</li>
+          <li>English (Fluent)</li>
+          <li>French (Conversational)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
