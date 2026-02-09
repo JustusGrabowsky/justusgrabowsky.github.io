@@ -1,9 +1,10 @@
 ---
 title: "Monte Carlo Simulation of the 3D Heisenberg Model"
 summary: "Implementation and benchmarking of Metropolis and Wolff algorithms to study ferromagnetic phase transitions, critical phenomena, and finite-size scaling in the classical Heisenberg model."
-date: 2024-03-01
 tags: [statistical-physics, monte-carlo, computational-physics, past]
-authors: ["Justus Grabowsky"]
+type: project
+draft: false
+date: 2020-06-01  
 ---
 As part of the Computational Statistical Physics course at ETH Zürich, we implemented Monte Carlo simulations of the three-dimensional classical Heisenberg model. The Heisenberg model is a lattice model used to describe ferromagnetism and phase transitions in magnetic materials.
 

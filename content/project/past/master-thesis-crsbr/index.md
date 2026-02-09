@@ -1,9 +1,7 @@
 ---
 title: "GW-BSE Study of Chromium Sulfur Bromide"
 summary: "First-principles many-body perturbation theory study of electronic, optical, and excitonic properties in the layered magnetic semiconductor CrSBr using GW-BSE methods."
-date: 2024-10-01
 tags: [many-body-theory, 2d-materials, ab-initio-methods, past]
-authors: ["Justus Grabowsky"]
 ---
 For my Master's thesis, I spent eight months as a visiting researcher at **Yale University**, working with Diana Qiu on the electronic and optical properties of chromium sulfur bromide (CrSBr). CrSBr is a layered magnetic semiconductor with promising applications in spintronics and optoelectronics.
 

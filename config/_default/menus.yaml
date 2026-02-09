@@ -9,7 +9,7 @@ main:
     weight: 1
 
   - name: Research
-    url: /projects/
+    url: /project/
     weight: 2
 
   - name: CV

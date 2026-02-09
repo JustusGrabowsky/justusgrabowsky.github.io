@@ -1,9 +1,7 @@
 ---
 title: "THz LC-Resonators for Ultra-Strong Light-Matter Coupling"
 summary: "Fabrication and characterization of terahertz metamaterial LC-resonators for ultra-strong light-matter coupling regime; multiphysics simulation, cleanroom fabrication, and terahertz time-domain spectroscopy."
-date: 2022-10-01
 tags: [photonics, nanofabrication, terahertz-spectroscopy, past]
-authors: ["Justus Grabowsky"]
 ---
 During my research stay at **École Normale Supérieure (ENS Paris)**, I worked with Carlo Sirtori on ultra-strong light-matter coupling. In the ultra-strong regime, the coupling strength becomes comparable to the transition energy itself, enabling novel quantum phenomena.
 

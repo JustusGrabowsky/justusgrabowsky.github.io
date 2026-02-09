@@ -1,9 +1,7 @@
 ---
 title: "Research Internship – Femtosecond Spectroscopy at OIST"
 summary: "Angle-resolved photoemission spectroscopy (ARPES) of 2D materials and development of fourth-harmonic generation setup for ultrafast pump-probe experiments."
-date: 2023-07-01
 tags: [ultrafast-spectroscopy, 2D-materials, nonlinear-optics, past]
-authors: ["Justus Grabowsky"]
 ---
 During summer 2023, I joined the **Femtosecond Spectroscopy Unit (FSU)** at the **Okinawa Institute of Science and Technology (OIST)**, led by Keshav Dani. The group combines ultrafast laser technology with low-dimensional materials to study light-matter interactions with femtosecond temporal and nanometer spatial resolution.
 
