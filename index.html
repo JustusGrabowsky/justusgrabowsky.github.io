@@ -3,257 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Justus Grabowsky — PhD student working at the intersection of neuroscience and artificial intelligence.">
   <title>Justus Grabowsky</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      height: 100%;
-    }
-
-    body {
-      font-family: 'Courier New', monospace;
-      background-color: #f5f5f5;
-      color: #333;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .container {
-      display: flex;
-      height: 100vh;
-    }
-
-    /* Sidebar Navigation */
-    .sidebar {
-      width: 200px;
-      background-color: #e8e8e8;
-      border-right: 2px solid #333;
-      padding: 20px;
-      overflow-y: auto;
-      flex-shrink: 0;
-    }
-
-    .sidebar h1 {
-      font-size: 16px;
-      font-weight: bold;
-      margin-bottom: 30px;
-      padding-bottom: 15px;
-      border-bottom: 1px solid #333;
-    }
-
-    .sidebar nav ul {
-      list-style: none;
-    }
-
-    .sidebar nav ul li {
-      margin-bottom: 10px;
-    }
-
-    .sidebar nav a {
-      color: #333;
-      text-decoration: none;
-      display: block;
-      padding: 8px;
-      border: 1px solid transparent;
-      transition: all 0.1s;
-    }
-
-    .sidebar nav a:hover {
-      background-color: #d0d0d0;
-      border: 1px solid #333;
-    }
-
-    .sidebar nav a.active {
-      background-color: #fff;
-      border: 1px solid #333;
-      font-weight: bold;
-    }
-
-    /* Main Content Area */
-    .main-content {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-    }
-
-    .header {
-      background-color: #fff;
-      border-bottom: 2px solid #333;
-      padding: 20px;
-    }
-
-    .header h1 {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .content-area {
-      flex: 1;
-      overflow-y: auto;
-      padding: 30px;
-      background-color: #fff;
-    }
-
-    .content-area h1 {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #333;
-    }
-
-    .content-area h2 {
-      font-size: 16px;
-      font-weight: bold;
-      margin-top: 25px;
-      margin-bottom: 15px;
-      padding-top: 10px;
-    }
-
-    .content-area h3 {
-      font-size: 14px;
-      font-weight: bold;
-      margin-top: 15px;
-      margin-bottom: 10px;
-    }
-
-    .content-area p {
-      margin-bottom: 15px;
-      text-align: justify;
-    }
-
-    .content-area ul, .content-area ol {
-      margin-left: 30px;
-      margin-bottom: 15px;
-    }
-
-    .content-area li {
-      margin-bottom: 8px;
-    }
-
-    .content-area a {
-      color: #0066cc;
-      text-decoration: underline;
-    }
-
-    .content-area a:visited {
-      color: #663399;
-    }
-
-    .content-area a:hover {
-      background-color: #ffff99;
-    }
-
-    /* Box elements for visual hierarchy */
-    .box {
-      border: 2px solid #333;
-      padding: 15px;
-      margin: 20px 0;
-      background-color: #fafafa;
-    }
-
-    .box h3 {
-      margin-top: 0;
-      border-bottom: 1px solid #999;
-      padding-bottom: 8px;
-      margin-bottom: 10px;
-    }
-
-    .box a {
-      color: #0066cc;
-      text-decoration: underline;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-
-      .sidebar {
-        width: 100%;
-        border-right: none;
-        border-bottom: 2px solid #333;
-        height: auto;
-      }
-
-      .sidebar h1 {
-        margin-bottom: 15px;
-      }
-
-      .sidebar nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .sidebar nav ul li {
-        margin-bottom: 0;
-      }
-
-      .main-content {
-        min-height: calc(100vh - 150px);
-      }
-
-      .content-area {
-        padding: 20px;
-      }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar">
-      <h1>Justus Grabowsky</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </aside>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- Main Content -->
-    <div class="main-content">
-      <div class="header">
-        <h1>Home</h1>
+  <header class="site-header">
+    <div class="site-shell header-inner">
+      <a class="site-name" href="index.html">Justus Grabowsky</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-shell">
+    <section class="hero" aria-labelledby="home-title">
+      <div class="portrait-placeholder" role="img" aria-label="Portrait placeholder for Justus Grabowsky">
+        <div>
+          <span>JG</span>
+          <small>Photo soon</small>
+        </div>
       </div>
-      <div class="content-area">
-        <p>
+      <div>
+        <p class="eyebrow">Neuroscience · Artificial Intelligence · Physics</p>
+        <h1 id="home-title">Justus Grabowsky</h1>
+        <p class="lede">
           I am a PhD student at the Institute of Neuroinformatics of ETH Zürich working at the intersection of Neuroscience and Artificial Intelligence. My research focuses on investigating how language features are represented and combined in the brain to form a unified meaning. I am also interested in how this happens in large language models. Outside of academia, I am a Venture Fellow at Creator Fund, investing in early-stage deep tech startups.
         </p>
+        <div class="hero-links" aria-label="Featured links">
+          <a href="https://ndlab.ch" target="_blank" rel="noopener noreferrer">Neural Dynamics Lab</a>
+          <a href="mailto:jgrabowsky@ethz.ch">Email</a>
+        </div>
+      </div>
+    </section>
 
-        <h2>Background</h2>
-        <p>
-          I received both my Bachelor's and Master's degrees in Physics from ETH Zürich in 2023 and 2025, respectively. During my Master's thesis, I worked on many-body perturbation theory at Yale University. Before that, I developed machine learned interatmoic potentials for accelerated computation of materials properties. I also did theoretical and computational work on statistical physics and the Heisenberg model. Before starting my Master's, I did an internship at the Okinawa Institute of Science and Technology, where I wokred on femtosecond spectroscopy. During my Bachelor's, I spent a year in Paris at École Normale Supérieure, where I worked on light-matter coupling in metamaterial resonators and on Langevin dynamics in biophysics.
-        </p>
-        <p>
-          Outside of my PhD I am a Venture Fellow at Creator Fund, investing in early-stage deep tech startups. I am mainly interested in startups in Switzerland in the areas of neuroscience, sustainability, materials discovery and AI.
-        </p>
+    <section class="content-section" aria-labelledby="background-title">
+      <p class="section-label">About</p>
+      <h2 id="background-title">Background</h2>
+      <p>
+        I received both my Bachelor's and Master's degrees in Physics from ETH Zürich in 2023 and 2025, respectively. During my Master's thesis, I worked on many-body perturbation theory at Yale University. Before that, I developed machine learned interatmoic potentials for accelerated computation of materials properties. I also did theoretical and computational work on statistical physics and the Heisenberg model. Before starting my Master's, I did an internship at the Okinawa Institute of Science and Technology, where I wokred on femtosecond spectroscopy. During my Bachelor's, I spent a year in Paris at École Normale Supérieure, where I worked on light-matter coupling in metamaterial resonators and on Langevin dynamics in biophysics.
+      </p>
+      <p>
+        Outside of my PhD I am a Venture Fellow at Creator Fund, investing in early-stage deep tech startups. I am mainly interested in startups in Switzerland in the areas of neuroscience, sustainability, materials discovery and AI.
+      </p>
+    </section>
 
-        <h2>Current Research Interests</h2>
-        <ul>
-          <li>One of my current main interests is computation in recurrent neural networks. This is includes (but is not limited to): sequence generation, non-normality, random matrix theory, noise in neural networks, low-rank networks, importance of time scales</li>
-          <li>Dynamical mechanisms of compositional computation</li>
-          <li>Interpretability of large language models, especially: symbolicity, reasoning and syntax</li>
-          <li>Binding and compositionality in the brain, specifically in language processing</li>
-        </ul>
+    <section class="content-section" aria-labelledby="interests-title">
+      <p class="section-label">Now</p>
+      <h2 id="interests-title">Current Research Interests</h2>
+      <ul class="interest-list">
+        <li>One of my current main interests is computation in recurrent neural networks. This is includes (but is not limited to): sequence generation, non-normality, random matrix theory, noise in neural networks, low-rank networks, importance of time scales</li>
+        <li>Dynamical mechanisms of compositional computation</li>
+        <li>Interpretability of large language models, especially: symbolicity, reasoning and syntax</li>
+        <li>Binding and compositionality in the brain, specifically in language processing</li>
+      </ul>
+
+      <aside class="affiliation" aria-label="Current affiliation">
         <p>
           <strong>Institute of Neuroinformatics</strong><br>
-          ETH Zürich & University of Zurich<br>
-          <a href="https://ndlab.ch" target="_blank">Neural Dynamics Lab</a>
+          ETH Zürich &amp; University of Zurich
         </p>
-      </div>
+        <a href="https://ndlab.ch" target="_blank" rel="noopener noreferrer">Neural Dynamics Lab ↗</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-shell footer-inner">
+      <span>Justus Grabowsky</span>
+      <span>Neuroscience · AI · Physics</span>
     </div>
-  </div>
+  </footer>
 </body>
 </html>
