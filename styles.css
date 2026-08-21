@@ -173,7 +173,7 @@ main {
 .hero .lede {
   margin: 1.15rem 0 0;
   color: #3f3f3f;
-  font-size: 1rem;
+  font-size: inherit;
   line-height: 1.6;
 }
 
@@ -261,7 +261,7 @@ main {
   max-width: 620px;
   margin: 0.85rem 0 0;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: inherit;
   line-height: 1.6;
 }
 
