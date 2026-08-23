@@ -28,7 +28,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--serif);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
@@ -371,7 +371,7 @@ main {
 
 @media (max-width: 720px) {
   body {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .site-shell {
