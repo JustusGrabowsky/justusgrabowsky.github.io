@@ -192,8 +192,18 @@ main {
 }
 
 .profile-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   color: var(--ink);
   text-decoration: none;
+}
+
+.profile-links .link-icon {
+  width: 1.15em;
+  height: 1.15em;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 
 .profile-links a + a {
@@ -344,31 +354,6 @@ main {
   white-space: nowrap;
 }
 
-.contact-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.contact-list li {
-  display: grid;
-  grid-template-columns: 110px minmax(0, 1fr);
-  gap: 1rem;
-  padding: 0.4rem 0;
-}
-
-.contact-list span {
-  color: var(--muted);
-  font-family: var(--sans);
-  font-size: 0.75rem;
-}
-
-.contact-list a {
-  color: var(--ink);
-  overflow-wrap: anywhere;
-  text-decoration: none;
-}
-
 @media (max-width: 720px) {
   body {
     font-size: 16px;
@@ -424,10 +409,6 @@ main {
   .content-section + .content-section {
     margin-top: 1.25rem;
     padding-top: 1.25rem;
-  }
-
-  .contact-list li {
-    grid-template-columns: 90px minmax(0, 1fr);
   }
 
 }
