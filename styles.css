@@ -148,23 +148,33 @@ main {
 }
 
 .hero {
+  display: grid;
+  grid-template-columns: 168px minmax(0, 1fr);
+  column-gap: 2.25rem;
+  align-items: start;
   padding-bottom: 0;
 }
 
-.hero-body {
-  display: grid;
-  grid-template-columns: 168px minmax(0, 1fr);
-  align-items: center;
-  gap: 2.25rem;
-  margin-top: 1.4rem;
-}
-
+/* portrait spans both rows, so its top lines up with the headline */
 .portrait {
+  grid-column: 1;
+  grid-row: 1 / 3;
   width: 168px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center 40%;
   filter: grayscale(100%) contrast(1.02);
+}
+
+.hero h1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.hero-body {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 1.15rem;
 }
 
 .hero h1,
@@ -385,9 +395,9 @@ main {
     padding-block: 0.5rem 3.5rem;
   }
 
-  .hero-body {
+  .hero {
     grid-template-columns: 132px minmax(0, 1fr);
-    gap: 1.45rem;
+    column-gap: 1.45rem;
   }
 
   .portrait {
