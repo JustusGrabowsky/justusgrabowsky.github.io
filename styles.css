@@ -12,6 +12,7 @@
   --serif: "IBM Plex Sans", Arial, sans-serif;
   --sans: "IBM Plex Sans", Arial, sans-serif;
   --shell: 680px;
+  color-scheme: light;
 }
 
 *,
@@ -147,11 +148,15 @@ main {
 }
 
 .hero {
+  padding-bottom: 0;
+}
+
+.hero-body {
   display: grid;
   grid-template-columns: 168px minmax(0, 1fr);
   align-items: center;
   gap: 2.25rem;
-  padding-bottom: 0;
+  margin-top: 1.4rem;
 }
 
 .portrait {
@@ -172,7 +177,7 @@ main {
 }
 
 .hero .lede {
-  margin: 1.15rem 0 0;
+  margin: 0;
   color: var(--ink-soft);
   font-size: inherit;
   line-height: 1.6;
@@ -379,7 +384,7 @@ main {
     padding-block: 0.5rem 3.5rem;
   }
 
-  .hero {
+  .hero-body {
     grid-template-columns: 132px minmax(0, 1fr);
     gap: 1.45rem;
   }
@@ -439,6 +444,7 @@ main {
     --line: #262626;
     --line-strong: #3a3a3a;
     --underline: rgba(255, 255, 255, 0.35);
+    color-scheme: dark;
   }
 }
 
@@ -453,6 +459,7 @@ main {
   --line: #262626;
   --line-strong: #3a3a3a;
   --underline: rgba(255, 255, 255, 0.35);
+  color-scheme: dark;
 }
 
 @media print {
