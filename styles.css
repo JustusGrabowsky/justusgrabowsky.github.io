@@ -199,8 +199,8 @@ main {
 }
 
 .profile-links .link-icon {
-  width: 1.15em;
-  height: 1.15em;
+  width: 0.95em;
+  height: 0.95em;
   fill: currentColor;
   flex-shrink: 0;
 }
