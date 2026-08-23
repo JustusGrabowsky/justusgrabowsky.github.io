@@ -12,6 +12,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -23,6 +31,14 @@
         <a href="research.html" aria-current="page">Research</a>
         <a href="background.html">Background</a>
         <a href="Justus_Grabowsky_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-14a1 1 0 0 1 1 1v1.6a1 1 0 0 1-2 0V4a1 1 0 0 1 1-1zm0 15.4a1 1 0 0 1 1 1V21a1 1 0 0 1-2 0v-1.6a1 1 0 0 1 1-1zM21 12a1 1 0 0 1-1 1h-1.6a1 1 0 0 1 0-2H20a1 1 0 0 1 1 1zM5.6 12a1 1 0 0 1-1 1H3a1 1 0 0 1 0-2h1.6a1 1 0 0 1 1 1zm12.73-6.33a1 1 0 0 1 0 1.41l-1.13 1.13a1 1 0 1 1-1.41-1.41l1.13-1.13a1 1 0 0 1 1.41 0zM8.21 15.79a1 1 0 0 1 0 1.41l-1.13 1.13a1 1 0 0 1-1.41-1.41l1.13-1.13a1 1 0 0 1 1.41 0zm10.12 2.54a1 1 0 0 1-1.41 0l-1.13-1.13a1 1 0 0 1 1.41-1.41l1.13 1.13a1 1 0 0 1 0 1.41zM8.21 8.21a1 1 0 0 1-1.41 0L5.67 7.08a1 1 0 0 1 1.41-1.41L8.21 6.8a1 1 0 0 1 0 1.41z"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21.64 13a1 1 0 0 0-1.05-.14 8 8 0 0 1-9.45-9.45 1 1 0 0 0-1.19-1.19A10 10 0 1 0 22 14.05a1 1 0 0 0-.36-1.05z"/>
+          </svg>
+        </button>
       </nav>
     </div>
   </header>
@@ -76,5 +92,6 @@
     </section>
   </main>
 
+  <script src="theme.js"></script>
 </body>
 </html>

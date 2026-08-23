@@ -7,6 +7,8 @@
   --accent-hover: #666666;
   --line: #e4e4e4;
   --line-strong: #c8c8c8;
+  --ink-soft: #3f3f3f;
+  --underline: rgba(0, 0, 0, 0.35);
   --serif: "IBM Plex Sans", Arial, sans-serif;
   --sans: "IBM Plex Sans", Arial, sans-serif;
   --shell: 680px;
@@ -42,7 +44,7 @@ svg {
 
 a {
   color: var(--accent);
-  text-decoration-color: rgba(0, 0, 0, 0.35);
+  text-decoration-color: var(--underline);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
   transition: color 160ms ease, text-decoration-color 160ms ease;
@@ -171,7 +173,7 @@ main {
 
 .hero .lede {
   margin: 1.15rem 0 0;
-  color: #3f3f3f;
+  color: var(--ink-soft);
   font-size: inherit;
   line-height: 1.6;
 }
@@ -314,7 +316,7 @@ main {
 }
 
 .project-card p {
-  color: #444444;
+  color: var(--ink-soft);
   line-height: 1.58;
 }
 
@@ -424,9 +426,41 @@ main {
   }
 }
 
+/* Dark theme: follows the OS, unless the visitor picked one explicitly */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #000000;
+    --paper-deep: #0a0a0a;
+    --ink: #f0f0f0;
+    --ink-soft: #c9c9c9;
+    --muted: #9a9a9a;
+    --accent: #f0f0f0;
+    --accent-hover: #b4b4b4;
+    --line: #262626;
+    --line-strong: #3a3a3a;
+    --underline: rgba(255, 255, 255, 0.35);
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #000000;
+  --paper-deep: #0a0a0a;
+  --ink: #f0f0f0;
+  --ink-soft: #c9c9c9;
+  --muted: #9a9a9a;
+  --accent: #f0f0f0;
+  --accent-hover: #b4b4b4;
+  --line: #262626;
+  --line-strong: #3a3a3a;
+  --underline: rgba(255, 255, 255, 0.35);
+}
+
 @media print {
-  :root {
+  :root,
+  :root[data-theme="dark"] {
     --paper: #ffffff;
+    --ink-soft: #333333;
+    --underline: rgba(0, 0, 0, 0.35);
     --ink: #000000;
     --muted: #333333;
     --accent: #000000;
@@ -466,5 +500,50 @@ main {
   .cv-entry,
   .project-card {
     break-inside: avoid;
+  }
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  line-height: 0;
+  transition: color 160ms ease;
+}
+
+.theme-toggle:hover {
+  color: var(--ink);
+}
+
+.theme-toggle svg {
+  width: 1.05em;
+  height: 1.05em;
+  fill: currentColor;
+}
+
+.theme-toggle .icon-moon {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+  display: inline;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun {
+    display: none;
+  }
+
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon {
+    display: inline;
   }
 }
